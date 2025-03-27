@@ -26,43 +26,6 @@ This project follows a micro-frontend approach using Module Federation:
     *   Can be developed and potentially deployed independently.
 3.  **Shared Dependencies:** Key libraries like `react`, `react-native`, and `react-native-web` are configured as `shared` in the Module Federation setup. This ensures only one instance is loaded at runtime, preventing version conflicts and optimizing bundle size.
 
-## Project Structure
-
-
-└── expo-repack-federation/
-├── README.md
-├── package.json # Root dependencies & scripts
-├── pnpm-lock.yaml
-├── pnpm-workspace.yaml # Defines pnpm workspaces
-├── turbo.json # Turborepo configuration
-├── .npmrc # pnpm configuration (e.g., shamefully-hoist)
-└── apps/
-├── host/ # Host Application
-│ ├── app.json
-│ ├── package.json
-│ ├── plugin/ # Expo Config Plugin for Re.Pack
-│ │ └── withRepack.js
-│ ├── webpack.mobile.config.mjs # Re.Pack config for Mobile
-│ ├── webpack.web.config.mjs # Webpack config for Web
-│ └── src/
-│ └── bootstrap.js # Web entry shim
-├── app1/ # Remote Application 1
-│ ├── app.json
-│ ├── package.json
-│ ├── plugin/
-│ │ └── withRepack.js
-│ ├── webpack.mobile.config.mjs
-│ ├── webpack.web.config.mjs
-│ └── src/
-└── app2/ # Remote Application 2
-├── app.json
-├── package.json
-├── plugin/
-│ └── withRepack.js
-├── webpack.mobile.config.mjs
-├── webpack.web.config.mjs
-└── src/
-
 ## Getting Started
 
 **Prerequisites:**
