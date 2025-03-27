@@ -42,7 +42,7 @@ This project follows a micro-frontend approach using Module Federation:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [<your-repo-url>](https://github.com/MuhammedBasith/expo-rn-repack-webpack.git)
+    git clone https://github.com/MuhammedBasith/expo-rn-repack-webpack.git
     cd expo-rn-repack-webpack
     ```
 2.  **Install dependencies:**
